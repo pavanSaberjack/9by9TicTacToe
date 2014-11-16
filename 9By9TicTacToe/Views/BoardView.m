@@ -11,7 +11,7 @@
 
 static NSString *cellIdentifier = @"cellIdentifier";
 
-@interface BoardView() <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface BoardView() <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, BoardBaseViewDelegate>
 @property (nonatomic, weak) UICollectionView *mainCollectionView;
 @end
 
@@ -64,7 +64,7 @@ static NSString *cellIdentifier = @"cellIdentifier";
     
 }
 
-#pragma mark - UICollectionViewDelegate, UICollectionViewDataSource methods
+#pragma mark - UICollectionViewDataSource methods
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return 9; // 9 blocks total
@@ -75,13 +75,24 @@ static NSString *cellIdentifier = @"cellIdentifier";
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     [cell.contentView setBackgroundColor:[UIColor blackColor]];
     BoardBaseView *baseView = [[BoardBaseView alloc] initWithFrame:cell.bounds];
+    [baseView setIndexPath:indexPath];
+    [baseView setDelegate:self];
     [cell.contentView addSubview:baseView];
-    
     return cell;
 }
 
+#pragma mark - UICollectionViewDelegate methods
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
+}
+
+#pragma mark - BoardBaseViewDelegate methods
+- (void)boardBaseView:(BoardBaseView *)baseView didClickedAtIndexPath:(NSIndexPath *)indexPath
+{
+    //
+    
+    UICollectionViewCell *cell = [self.mainCollectionView cellForItemAtIndexPath:[NSIndexPath indexPathForItem:2 inSection:0]];
+    [cell setAlpha:0.1];
 }
 @end

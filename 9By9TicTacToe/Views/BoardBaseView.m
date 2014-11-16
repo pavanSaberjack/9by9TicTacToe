@@ -60,7 +60,7 @@ static NSString *cellIdentifier = @"cellIdentifier";
     
 }
 
-#pragma mark - UICollectionViewDelegate, UICollectionViewDataSource methods
+#pragma mark - UICollectionViewDataSource methods
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return 9; // 9 blocks total
@@ -74,8 +74,12 @@ static NSString *cellIdentifier = @"cellIdentifier";
     return cell;
 }
 
+#pragma mark - UICollectionViewDelegate methods
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    if ([self.delegate respondsToSelector:@selector(boardBaseView:didClickedAtIndexPath:)])
+    {
+        [self.delegate boardBaseView:self didClickedAtIndexPath:indexPath];
+    }
 }
 @end

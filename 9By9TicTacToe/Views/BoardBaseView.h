@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol BoardBaseViewDelegate;
 @interface BoardBaseView : UIView
+@property (nonatomic, strong) NSIndexPath *indexPath;
+@property (nonatomic, weak) id <BoardBaseViewDelegate>delegate;
+@end
 
+@protocol BoardBaseViewDelegate <NSObject>
+- (void) boardBaseView:(BoardBaseView *)baseView didClickedAtIndexPath:(NSIndexPath *)indexPath;
 @end
