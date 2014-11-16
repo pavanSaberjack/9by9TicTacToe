@@ -7,9 +7,10 @@
 //
 
 #import "ArenaViewController.h"
+#import "BoardView.h"
 
 @interface ArenaViewController ()
-
+@property (nonatomic, weak) IBOutlet BoardView *mainArenaView;
 @end
 
 @implementation ArenaViewController
@@ -33,5 +34,11 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - UI creation methods
+- (void)setupUI
+{
+    
+}
 
 @end

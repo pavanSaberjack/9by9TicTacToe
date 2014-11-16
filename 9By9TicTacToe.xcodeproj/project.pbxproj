@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5812310F1A186164007FFD0F /* BoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5812310E1A186164007FFD0F /* BoardView.m */; };
+		581231141A188DD6007FFD0F /* BoardBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 581231131A188DD6007FFD0F /* BoardBaseView.m */; };
 		582BDA9F1A145769001B4321 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 582BDA9E1A145769001B4321 /* main.m */; };
 		582BDAA21A145769001B4321 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 582BDAA11A145769001B4321 /* AppDelegate.m */; };
 		582BDAA51A145769001B4321 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 582BDAA41A145769001B4321 /* ViewController.m */; };
@@ -18,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5812310D1A186164007FFD0F /* BoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardView.h; sourceTree = "<group>"; };
+		5812310E1A186164007FFD0F /* BoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardView.m; sourceTree = "<group>"; };
+		581231121A188DD6007FFD0F /* BoardBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardBaseView.h; sourceTree = "<group>"; };
+		581231131A188DD6007FFD0F /* BoardBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardBaseView.m; sourceTree = "<group>"; };
 		582BDA991A145769001B4321 /* 9By9TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 9By9TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		582BDA9D1A145769001B4321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		582BDA9E1A145769001B4321 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -136,6 +142,10 @@
 		582BDAC51A1457C1001B4321 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5812310D1A186164007FFD0F /* BoardView.h */,
+				5812310E1A186164007FFD0F /* BoardView.m */,
+				581231121A188DD6007FFD0F /* BoardBaseView.h */,
+				581231131A188DD6007FFD0F /* BoardBaseView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,10 +228,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				581231141A188DD6007FFD0F /* BoardBaseView.m in Sources */,
 				582BDAA51A145769001B4321 /* ViewController.m in Sources */,
 				582BDAA21A145769001B4321 /* AppDelegate.m in Sources */,
 				589E5AE81A185A2E0063B923 /* ArenaViewController.m in Sources */,
 				582BDA9F1A145769001B4321 /* main.m in Sources */,
+				5812310F1A186164007FFD0F /* BoardView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +332,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 9By9TicTacToe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -330,6 +343,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 9By9TicTacToe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
