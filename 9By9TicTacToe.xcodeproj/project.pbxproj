@@ -10,24 +10,12 @@
 		582BDA9F1A145769001B4321 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 582BDA9E1A145769001B4321 /* main.m */; };
 		582BDAA21A145769001B4321 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 582BDAA11A145769001B4321 /* AppDelegate.m */; };
 		582BDAA51A145769001B4321 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 582BDAA41A145769001B4321 /* ViewController.m */; };
-		582BDAA81A14576A001B4321 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582BDAA61A14576A001B4321 /* Main.storyboard */; };
 		582BDAAA1A14576A001B4321 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 582BDAA91A14576A001B4321 /* Images.xcassets */; };
 		582BDAAD1A14576A001B4321 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 582BDAAB1A14576A001B4321 /* LaunchScreen.xib */; };
-		582BDAB91A14576A001B4321 /* _By9TicTacToeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 582BDAB81A14576A001B4321 /* _By9TicTacToeTests.m */; };
 		589E5AE31A1856CD0063B923 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 589E5AE21A1856CD0063B923 /* ViewController.xib */; };
 		589E5AE81A185A2E0063B923 /* ArenaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 589E5AE61A185A2E0063B923 /* ArenaViewController.m */; };
 		589E5AE91A185A2E0063B923 /* ArenaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 589E5AE71A185A2E0063B923 /* ArenaViewController.xib */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		582BDAB31A14576A001B4321 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 582BDA911A145769001B4321 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 582BDA981A145769001B4321;
-			remoteInfo = 9By9TicTacToe;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		582BDA991A145769001B4321 /* 9By9TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 9By9TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,10 +25,8 @@
 		582BDAA11A145769001B4321 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		582BDAA31A145769001B4321 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
 		582BDAA41A145769001B4321 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
-		582BDAA71A14576A001B4321 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		582BDAA91A14576A001B4321 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		582BDAAC1A14576A001B4321 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		582BDAB21A14576A001B4321 /* 9By9TicTacToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 9By9TicTacToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		582BDAB71A14576A001B4321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		582BDAB81A14576A001B4321 /* _By9TicTacToeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _By9TicTacToeTests.m; sourceTree = "<group>"; };
 		589E5AE21A1856CD0063B923 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
@@ -51,13 +37,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		582BDA961A145769001B4321 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		582BDAAF1A14576A001B4321 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				582BDA991A145769001B4321 /* 9By9TicTacToe.app */,
-				582BDAB21A14576A001B4321 /* 9By9TicTacToeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,7 +73,6 @@
 				582BDAC61A1457C1001B4321 /* XMPPManager */,
 				582BDAA01A145769001B4321 /* AppDelegate.h */,
 				582BDAA11A145769001B4321 /* AppDelegate.m */,
-				582BDAA61A14576A001B4321 /* Main.storyboard */,
 				582BDAA91A14576A001B4321 /* Images.xcassets */,
 				582BDAAB1A14576A001B4321 /* LaunchScreen.xib */,
 				582BDA9C1A145769001B4321 /* Supporting Files */,
@@ -190,24 +167,6 @@
 			productReference = 582BDA991A145769001B4321 /* 9By9TicTacToe.app */;
 			productType = "com.apple.product-type.application";
 		};
-		582BDAB11A14576A001B4321 /* 9By9TicTacToeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 582BDABF1A14576A001B4321 /* Build configuration list for PBXNativeTarget "9By9TicTacToeTests" */;
-			buildPhases = (
-				582BDAAE1A14576A001B4321 /* Sources */,
-				582BDAAF1A14576A001B4321 /* Frameworks */,
-				582BDAB01A14576A001B4321 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				582BDAB41A14576A001B4321 /* PBXTargetDependency */,
-			);
-			name = 9By9TicTacToeTests;
-			productName = 9By9TicTacToeTests;
-			productReference = 582BDAB21A14576A001B4321 /* 9By9TicTacToeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -219,10 +178,6 @@
 				TargetAttributes = {
 					582BDA981A145769001B4321 = {
 						CreatedOnToolsVersion = 6.1;
-					};
-					582BDAB11A14576A001B4321 = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 582BDA981A145769001B4321;
 					};
 				};
 			};
@@ -240,7 +195,6 @@
 			projectRoot = "";
 			targets = (
 				582BDA981A145769001B4321 /* 9By9TicTacToe */,
-				582BDAB11A14576A001B4321 /* 9By9TicTacToeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -250,18 +204,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				582BDAA81A14576A001B4321 /* Main.storyboard in Resources */,
 				589E5AE91A185A2E0063B923 /* ArenaViewController.xib in Resources */,
 				582BDAAD1A14576A001B4321 /* LaunchScreen.xib in Resources */,
 				589E5AE31A1856CD0063B923 /* ViewController.xib in Resources */,
 				582BDAAA1A14576A001B4321 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		582BDAB01A14576A001B4321 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,33 +225,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		582BDAAE1A14576A001B4321 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				582BDAB91A14576A001B4321 /* _By9TicTacToeTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		582BDAB41A14576A001B4321 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 582BDA981A145769001B4321 /* 9By9TicTacToe */;
-			targetProxy = 582BDAB31A14576A001B4321 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		582BDAA61A14576A001B4321 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				582BDAA71A14576A001B4321 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		582BDAAB1A14576A001B4321 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -413,40 +335,6 @@
 			};
 			name = Release;
 		};
-		582BDAC01A14576A001B4321 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = 9By9TicTacToeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/9By9TicTacToe.app/9By9TicTacToe";
-			};
-			name = Debug;
-		};
-		582BDAC11A14576A001B4321 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = 9By9TicTacToeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/9By9TicTacToe.app/9By9TicTacToe";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -464,15 +352,6 @@
 			buildConfigurations = (
 				582BDABD1A14576A001B4321 /* Debug */,
 				582BDABE1A14576A001B4321 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		582BDABF1A14576A001B4321 /* Build configuration list for PBXNativeTarget "9By9TicTacToeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				582BDAC01A14576A001B4321 /* Debug */,
-				582BDAC11A14576A001B4321 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
