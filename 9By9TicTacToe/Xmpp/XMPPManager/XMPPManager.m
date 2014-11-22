@@ -59,7 +59,7 @@ static const int ddLogLevel = LOG_LEVEL_INFO;
 #define XMPP_HOST       @"dev.chat.nextspotapp.com" //development server
 #define XMPP_HOST_NAME @"nextspot"
 
-#define XMPP_PORT 5222
+#define XMPP_PORT 9090
 
 CGFloat const ToastHeight = 64.0f;
 
@@ -201,7 +201,7 @@ NSString *const kXMPPmyPassword = @"kXMPPmyPassword";
 {
     if (_currentPubsub == nil)
     {
-        XMPPJID *serviceJid = [XMPPJID jidWithString:@"pubsub.54.84.126.215"];
+        XMPPJID *serviceJid = [XMPPJID jidWithString:@"pubsub.54.68.37.75"];
         XMPPPubSub *pubsub = [[XMPPPubSub alloc] initWithServiceJID:serviceJid dispatchQueue:xmppQueue];
         [pubsub activate:self.xmppStream];
         [pubsub addDelegate:self delegateQueue:xmppQueue];
@@ -289,15 +289,15 @@ NSString *const kXMPPmyPassword = @"kXMPPmyPassword";
 	}
     
     
-    NSString *myJID = @"yourJid";
+    NSString *myJID = @"admin";
 	NSString *myPassword = @"yourJpwd";
     
 	//
 	// If you don't want to use the Settings view to set the JID,
 	// uncomment the section below to hard code a JID and password.
 	//
-	// myJID = @"user@gmail.com/xmppframework";
-	// myPassword = @"";
+	 myJID = @"itagi75@gmail.com/xmppframework";
+	 myPassword = @"";
 	
 	if (myJID == nil || myPassword == nil) {
 		return NO;

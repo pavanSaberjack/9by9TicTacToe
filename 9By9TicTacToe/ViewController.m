@@ -18,6 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // Checking if the user is not connected to xmpp and trying to send message
+    if (![[[XMPPManager sharedInstance] xmppStream] isConnected])
+    {
+        [[XMPPManager sharedInstance] connect];
+    }
+    else
+    {
+        [[XMPPManager sharedInstance] goOnline];
+    }
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
